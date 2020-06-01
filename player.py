@@ -9,7 +9,6 @@ from multiprocessing import Process
 m = PyMouse()
 
 def run(m,t=685,y=710,color=66):
-    global target
     with mss.mss() as sct:
         # The screen part to capture
         monitor = {"top": t, "left": 40, "width": 200, "height": 1}
